@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEalsAPP</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+		<!-- App logo link to the homepage -->
+    <a href="index.html" style="text-decoration: none; color: antiquewhite;"><h1>Meal App</h1></a>
+		<!-- Search bar container -->
+		<div class="search-container">
+			<input type="text" id="search-input" placeholder="Search for a meal...">
+			<button id="search-button">Search</button>
+      
+     h 
+		</div>
+    <a href="favorites.html"></a>
+      <button id="favorites-button">View Favorites</button>
+  </a>
+	</nav>
+	
+
+	<!-- List of Meals -->
+	<ul id="meal-list">
+        <li>
+          <a href="meal%20discription/masala-paneer.html">
+            <img src="C:\Users\singh\Downloads\bowl-soup-with-piece-bread-i.avif" alt="Paneer Masala">
+            <button id="btn-fav"> <i class="fa-regular fa-heart"></i>Add to Favourite</button>
+            <h3>Paneer Masala</h3>
+           
+           </a>
+        </li>
+        <li>
+          <a href="rice.html">
+            <img src="C:\Users\singh\Downloads\75581339.jpg" alt="Veg Manchurian">
+            <button id="btn-fav"> <i class="fa-regular fa-heart"></i>Add to Favourite</button>
+            <h3>Veg Manchurian</h3>
+            
+          </a>
+        </li>
+        <li>
+          <a href="meal%20discription/chicken.html">
+            <img src="C:\Users\singh\Downloads\Chicken-Chow-Mein-3-728x1092.jpg" alt="Chicken">
+            <button id="btn-fav"> <i class="fa-regular fa-heart"></i>Add to Favourite</button>
+            <h3>Chicken</h3>
+            
+          </a>
+        </li>
+        <li>
+          <a href="meal%20discription/cho-mug-cake.html">
+            <img src="C:\Users\singh\Downloads\download (2).jpg" alt="Lava-Mug-Cake">
+            <button id="btn-fav" onclick="toggleFavorite('Lava Mug Cake')"> <i class="fa-regular fa-heart" ></i>Add to Favourite</button>
+            <h3>Lava Mug Cake</h3>
+            
+          </a>
+        </li>
+        <li>
+          <a href="meal%20discription/Fried-rice.html">
+            <img src="C:\Users\singh\Downloads\Tandoori-Chicken-Recipe.jpg" alt="Fried-Rice">
+            <button id="btn-fav"> <i class="fa-regular fa-heart"></i>Add to Favourite</button>
+            <h3>Fried Rice</h3>
+           
+          </a>
+        </li>
+        <li>
+            <a href="cake.html">
+              <img src="C:\Users\singh\Downloads\tandoori-chicken.jpg" alt="Mug-cake">
+              <button id="btn-fav"> <i class="fa-regular fa-heart"></i>Add to Favourite</button>
+              <h3>Mug cake</h3>
+              
+            </a>
+          </li>
+          <li>
+            <a href="meal%20discription/makki.html">
+              <img src="C:\Users\singh\Downloads\MealImage\roti.jpg" alt="Makki-Ki-roti">
+              <button id="btn-fav"> <i class="fa-regular fa-heart"></i>Add to Favourite</button>
+              <h3>Makki Ki roti</h3>
+              
+            </a>
+          </li>
+          <li>
+            <a href="meal%20discription/rice.html">
+              <img src="C:\Users\singh\Downloads\MealImage\rice 3.jpg" alt="Rice">
+              <button id="btn-fav" data-item="Rice"> <i class="fa-regular fa-heart"></i>Add to Favourite</button>
+              <h3>Rice</h3>
+              
+            </a>
+          </li>
+          <li>
+            <a href="meal%20discription/noddles.html">
+              <img src="C:\Users\singh\Downloads\MealImage\hakka.jpg" alt="Hakka-Noodles">
+              <button id="btn-fav"> <i class="fa-regular fa-heart"></i>Add to Favourite</button>
+              <h3>Hakka Noodles</h3>
+             
+            </a>
+          </li>
+          <li>
+            <a href="meal%20discription/tom.html">
+              <img src="C:\Users\singh\Downloads\MealImage\download (2).jpg" alt="Tom-Kha">
+              <button id="btn-fav" data-item="Tom Kha"> <i class="fa-regular fa-heart"></i>Add to Favourite</button>
+              <h3>Tom Kha</h3>
+             
+            </a>
+          </li>
+          <li>
+            <a href="meal%20discription/soup.html">
+              <img src="C:\Users\singh\Downloads\MealImage\bowl-soup-with-piece-bread-i.avif"alt="Soup">
+              <button id="btn-fav" data-item="Soup"> <i class="fa-regular fa-heart"></i>Add to Favourite</button>
+              <h3>Soup</h3>
+             
+            </a>
+          </li>
+          <li>
+            <a href="meal%20discription/shahi-paneer.html">
+              <img src="C:\Users\singh\Downloads\MealImage\paneer.jpg" alt="Shahi-Paneer">
+              <button id="btn-fav"> <i class="fa-regular fa-heart"></i>Add to Favourite</button>
+              <h3>Shahi Paneer</h3>
+             
+            </a>
+          </li>  
+        <h2>Favourite List</h2>
+        <ul id="favorites-list"></ul>
+      </ul>
+      
+
+	
+</body>
+</html>
+    <script src="script.js"></script>
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script>
+</body>
+</html>

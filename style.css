@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color:#651b0c;
+    color: rgb(200, 163, 163);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  
+  nav h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #search-input {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  #search-button {
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  #no-result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  #meal-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin: 30px;
+    padding: 0;
+  }
+  
+  #meal-list li {
+    border: 1px solid #073f44;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+
+  }
+  
+  #meal-list li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+  }
+  
+  #meal-list li a:hover {
+    transform: translateY(-5px);
+  }
+  
+  #meal-list li img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  #meal-list li h3 {
+    font-size: 24px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+
+  button#favourite-btn {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#favorite-btn:hover {
+    background-color: #218838;
+}
+  @media only screen and (max-width: 768px) {
+    #meal-list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+  
+    #meal-list li img {
+      height: 200px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    nav h1 {
+      font-size: 24px;
+    }
+  
+    #search-input {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    #search-button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    #no-result {
+      font-size: 20px;
+    }
+  
+    #meal-list li h3 {
+      font-size: 20px;
+    }
+  
+    #meal-list li p {
+      font-size: 14px;
+    }
+  
+    #meal-list li img {
+      height: 150px;
+    }
+  }
+  #favourite-btn{
+    font-size: 14px;
+      padding: 8px;
+  }
